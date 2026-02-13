@@ -4,15 +4,24 @@ body {
   font-family: sans-serif;
 }
 
-.header {
-  background-color: #0b1220;
-  padding: 20px;
-  border-bottom: 2px solid #1f2a44;
+.header{
+  background-color:#0b1220;
+  padding:20px;
+  border-bottom:2px solid #1f2a44;
 
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display:flex;
+  align-items:center;
 }
+
+.nav{
+  margin-left:auto;      /* 🔥 esto empuja el nav a la derecha */
+  display:flex;
+  gap:12px;
+
+  background:transparent;
+  padding:0;
+}
+
 
 
 .logo {
