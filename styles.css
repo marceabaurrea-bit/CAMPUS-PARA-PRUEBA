@@ -284,4 +284,19 @@ h2 {
   padding: 20px;
 }
 
+  /* Color de texto global del sitio */
+body {
+  color: white;
+}
+
+/* Títulos globales */
+h1, h2, h3 {
+  color: gray;
+}
+
+/* Párrafos y listas globales */
+p, li, label {
+  color: white;
+}
+
  
