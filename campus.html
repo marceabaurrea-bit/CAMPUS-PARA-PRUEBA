@@ -10,19 +10,23 @@
 <body>
 
   <!-- ENCABEZADO -->
-<header class="header">
-  <img src="pngs/logoinstitucional.png" alt="Logo institucional" class="logo">
+  <header class="header">
+    <img src="pngs/logoinstitucional.png" alt="Logo institucional" class="logo">
 
-
-</header>
-
-
-
-
+    <nav class="nav">
+      <a href="index.html" class="nav-link">Inicio</a>
+      <a href="formaciones.html" class="nav-link">Formaciones</a>
+      <a href="campus.html" class="nav-link active">Campus</a>
+    </nav>
+  </header>
 
   <!-- CONTENIDO PRINCIPAL -->
   <main class="main">
     <section class="inicio">
+
+      <!-- BOTÓN VOLVER -->
+      <a href="index.html" class="btn-volver">← Volver al inicio</a>
+
       <h1>Campus Virtual</h1>
 
       <p>
@@ -31,36 +35,34 @@
       </p>
 
       <h2>Acceso al campus</h2>
-<form class="form-campus" action="campus_ingreso.html" method="get">
-  <label class="form-label" for="mail-campus">Mail</label>
-  <input
-    class="form-input"
-    type="email"
-    id="mail-campus"
-    name="mail"
-    placeholder="Ingresá tu correo electrónico"
-    required
-  >
 
-  <label class="form-label" for="pass-campus">Contraseña</label>
-  <input
-    class="form-input"
-    type="password"
-    id="pass-campus"
-    name="password"
-    placeholder="Mínimo 6 caracteres"
-    minlength="6"
-    required
-  >
+      <form class="form-campus" action="campus_ingreso.html" method="get">
+        <label class="form-label" for="mail-campus">Mail</label>
+        <input
+          class="form-input"
+          type="email"
+          id="mail-campus"
+          name="mail"
+          placeholder="Ingresá tu correo electrónico"
+          required
+        >
 
-  <button class="form-btn" type="submit">Ingresar</button>
-</form>
+        <label class="form-label" for="pass-campus">Contraseña</label>
+        <input
+          class="form-input"
+          type="password"
+          id="pass-campus"
+          name="password"
+          placeholder="Mínimo 6 caracteres"
+          minlength="6"
+          required
+        >
 
-   
+        <button class="form-btn" type="submit">Ingresar</button>
+      </form>
+
     </section>
   </main>
-
-
 
 </body>
 </html>
