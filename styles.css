@@ -299,4 +299,58 @@ p, li, label {
   color: white;
 }
 
- 
+ /* ===== ESTILO GENERAL DEL CONTENIDO ===== */
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+h1, h2 {
+  color: #9aa3b2;
+  margin-bottom: 15px;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* ===== TARJETA DEL FORMULARIO ===== */
+
+.formulario-campus {
+  background-color: #000;
+  border: 1px solid #2a3550;
+  border-radius: 12px;
+  padding: 25px;
+  margin-top: 25px;
+}
+
+/* inputs alineados */
+.formulario-campus input,
+.formulario-campus textarea {
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* botón */
+.formulario-campus button {
+  background-color: #9aa3b2;
+  color: black;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.formulario-campus button:hover {
+  background-color: white;
+}
+
