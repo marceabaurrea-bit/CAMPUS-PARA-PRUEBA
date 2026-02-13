@@ -5,13 +5,11 @@ body {
 }
 
 .header{
-  background-color:#0b1220;
-  padding:20px;
-  border-bottom:2px solid #1f2a44;
-
-  display:flex;
-  align-items:center;
+  position: sticky;   /* opcional, queda fijo arriba al scrollear */
+  top: 0;
+  z-index: 10;        /* 👈 el header siempre arriba */
 }
+
 
 .nav{
   margin-left:auto;      /* 🔥 esto empuja el nav a la derecha */
@@ -55,25 +53,28 @@ body {
 }
 
 /* ===== FORMULARIO LINDO (aplica a tu .form actual) ===== */
-
 .aside{
-  width: 280px;                 /* más angosto */
-  max-height: 80vh;             /* no supera la pantalla */
-  overflow-y: auto;             /* scroll si es largo */
+  width: 280px;
+  max-height: 70vh;
+  overflow-y: auto;
 
   background: rgba(0,0,0,0.85);
   color: white;
-  padding: 18px;                /* menos padding */
+  padding: 18px;
 
   position: fixed;
   right: 16px;
-  top: 56%;
-  transform: translateY(-50%);
 
+  top: 140px;            /* 👈 baja el formulario para que no tape el menú */
+  transform: none;       /* 👈 sacamos el centrado */
+  
   border-radius: 16px;
   border: 1px solid #2a3550;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+
+  z-index: 1;            /* queda por debajo del header si el header tiene más */
 }
+
 
 
 .aside-title{
@@ -385,4 +386,8 @@ p {
   background-color: white;
 }
 .main { color: white; }
+
+.main{
+  margin-right: 320px;  /* deja espacio para el aside */
+}
 
