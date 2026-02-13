@@ -7,9 +7,13 @@ body {
 .header {
   background-color: #0b1220;
   padding: 20px;
-  text-align: center;
   border-bottom: 2px solid #1f2a44;
+
+  display: flex;          
+  justify-content: flex-start; 
+  align-items: center;    
 }
+
 
 .logo {
   width: 300px;
