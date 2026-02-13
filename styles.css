@@ -10,10 +10,9 @@ body {
   border-bottom: 2px solid #1f2a44;
 
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
-
 
 
 .logo {
@@ -23,9 +22,11 @@ body {
 
 .nav {
   display: flex;
-  gap: 10px;
-}
+  gap: 12px;
 
+  background-color: transparent; 
+  padding: 0;               
+  text-align: left;            
 
 .nav-link {
   text-decoration: none;   
