@@ -9,10 +9,11 @@ body {
   padding: 20px;
   border-bottom: 2px solid #1f2a44;
 
-  display: flex;          
-  justify-content: flex-start; 
-  align-items: center;    
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
 }
+
 
 
 .logo {
