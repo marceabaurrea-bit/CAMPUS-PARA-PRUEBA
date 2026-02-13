@@ -29,13 +29,15 @@ body {
   height: auto;
 }
 
-.nav {
-  display: flex;
-  gap: 12px;
-
-  background-color: transparent; 
-  padding: 0;               
-  text-align: left;            
+.nav{
+  margin-left:auto;
+  display:flex;
+  gap:12px;
+  background:transparent;
+  padding:0;
+  text-align:left;
+}
+          
 
 .nav-link {
   text-decoration: none;   
