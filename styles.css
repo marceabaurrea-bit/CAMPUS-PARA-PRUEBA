@@ -54,101 +54,86 @@ body {
   color: black;
 }
 
-/* ===== TARJETA DEL FORMULARIO (MODERNA) ===== */
+/* ===== FORMULARIO LINDO (aplica a tu .form actual) ===== */
 
-.aside {
-  width: 300px;
-  background: rgba(0, 0, 0, 0.85);
+.aside{
+  width: 320px;
+  background: rgba(0,0,0,0.85);
   color: white;
-  padding: 25px;
+  padding: 22px;
   position: fixed;
   right: 20px;
   top: 50%;
   transform: translateY(-50%);
-
   border-radius: 16px;
   border: 1px solid #2a3550;
   box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-  backdrop-filter: blur(6px);
 }
 
-/* título */
-.aside-title {
-  font-size: 20px;
-  margin-bottom: 15px;
-  color: #9aa3b2;
-  text-align: center;
+.aside-title{
+  text-align:center;
+  color:#9aa3b2;
+  margin:0 0 12px 0;
+}
+
+/* el form en columna, prolijo */
+.form{
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
 }
 
 /* labels */
-.form-label {
-  display: block;
-  margin-top: 12px;
-  margin-bottom: 5px;
-  font-size: 14px;
+.form-label{
+  color:#cbd5e1;
+  font-size: 13px;
+  margin: 0;
 }
 
-/* inputs y textarea */
+/* inputs + textarea */
 .form-input,
-.form-textarea {
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #2a3550;
-  background-color: #0b1220;
-  color: white;
-  outline: none;
-  transition: 0.2s;
+.form-textarea{
+  background-color:#0b1220;
+  color:white;
+  border:1px solid #2a3550;
+  border-radius:10px;
+  padding:10px 12px;
+  outline:none;
 }
 
-/* efecto al hacer foco */
+/* foco */
 .form-input:focus,
-.form-textarea:focus {
-  border-color: #9aa3b2;
-  box-shadow: 0 0 0 2px rgba(154,163,178,0.2);
+.form-textarea:focus{
+  border-color:#9aa3b2;
+  box-shadow:0 0 0 2px rgba(154,163,178,0.2);
 }
 
-/* checkboxes */
-.form input[type="checkbox"] {
-  margin-right: 6px;
+/* checkboxes alineados */
+.form label{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  color:#e5e7eb;
 }
 
-/* botón moderno */
-.form-btn {
-  margin-top: 15px;
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 10px;
+/* botón */
+.form-btn{
+  width:100%;
+  padding:12px;
+  border:none;
+  border-radius:10px;
   background: linear-gradient(135deg, #9aa3b2, #ffffff);
-  color: black;
-  font-weight: bold;
-  cursor: pointer;
-  transition: 0.25s;
+  color:black;
+  font-weight:700;
+  cursor:pointer;
+  transition: .2s;
 }
 
-/* hover botón */
-.form-btn:hover {
+.form-btn:hover{
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0,0,0,0.5);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
 
-/* mensaje enviado */
-.mensaje-enviado {
-  display: none;
-  margin-top: 12px;
-  background-color: #111827;
-  color: #9aa3b2;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-  font-weight: bold;
-  border: 1px solid #2a3550;
-}
-
-#enviado:target {
-  display: block;
-}
 
 
 .main {
