@@ -167,3 +167,22 @@ p{
 #enviado:target{
   display:block;
 }
+
+
+/* BOTÓN VOLVER AL INICIO */
+.btn-volver{
+  display:inline-block;
+  margin-bottom:20px;
+  padding:8px 16px;
+  background:#1f2a44;
+  color:white;
+  text-decoration:none;
+  border-radius:6px;
+  font-size:14px;
+  transition:0.2s;
+}
+
+.btn-volver:hover{
+  background:#ffffff;
+  color:#000000;
+}
